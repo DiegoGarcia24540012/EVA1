@@ -1,4 +1,4 @@
-package ej4;
+package ej8;
 
 public class Vehiculo
 {
@@ -8,6 +8,27 @@ public class Vehiculo
 	private double precio;
 	private int year;
 	private String color;
+	// Los metodos no tienen valor de retorno, solo ACCESO NOMBRE(PARAMETROS) 
+	// Constructor default: Constructor sin parametros
+	
+	public Vehiculo() // CONSTRUCTOR DEFAULT
+	{
+		System.out.println("CREANDO OBJETO VEHICULO");
+		marca="SIN MARCA";
+		modelo="SIN MODELO";
+		precio=0;
+		year=0;
+		color="SIN COLOR";
+	}
+	
+	public Vehiculo(String mar, String mod, int y, double pre, String col) // CONSTRUCTOR CON PARAMETROS
+	{
+		marca=mar;
+		modelo=mod;
+		precio=pre;
+		year=y;
+		color=col;
+	}
 	
 	////////////////  GET Y SET  ////////////////////
 	public String getMarca()

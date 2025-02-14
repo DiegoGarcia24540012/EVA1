@@ -1,10 +1,24 @@
-package ej5;
+package ej9;
 
 public class Television
 {
+	// AGREGAR CONST DEFAULT.  TV APAGADA, CANAL 3, VOLUMEN 10.  CONST CON PARAMETROS
+	
+	public Television()
+	{
+		System.out.println("CREANDO OBJETO TELEVISION");
+	}
+	
+	public Television(boolean enc, int vol, int can)
+	{
+		encendido=enc;
+		volumen=vol;
+		canal=can;
+	}
+	
 	private boolean encendido;
 	private int volumen;
-	private int canal=10;
+	private int canal;
 	
 	public void encenderApagar()
 	{
